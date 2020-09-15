@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="card left"></div>
+    <div class="card right"></div>
+    <style>
+        html {
+            --bgColor: #ffd3d3;
+
+            --whiteShadow: -15px -15px 25px rgba(255, 117, 117, .5);
+            --blackShadow: 15px 15px 25px rgba(110, 40, 40, .2);
+        }
+
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--bgColor);
+        }
+
+        .card {
+            width: 30vh;
+            height: 30vh;
+            margin: 45px;
+            background-color: var(--bgColor);
+            border-radius: 30px;
+        }
+
+        .left {
+            box-shadow: var(--blackShadow),
+                var(--whiteShadow);
+        }
+
+        .right {
+            box-shadow: inset var(--blackShadow), inset var(--whiteShadow);
+        }
+    </style>
+</body>
+
+</html>
